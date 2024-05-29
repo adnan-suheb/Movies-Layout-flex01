@@ -128,6 +128,74 @@
     font-size: 22px;
 }
 
+/* download section */
+
+.downloadImg{
+    height: 250px;
+}
+.downloadImg img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.downloadInfo{
+    background-color: #fff;
+    padding: 20px;
+}
+.downloadCast{
+    display: flex;
+    flex-wrap: wrap;
+}
+.downloadCast h4, .downloadGenre h4{
+    flex:0 0 50px;
+    align-self: center;
+}
+.downloadGenre p{
+    text-transform: capitalize;
+    margin-bottom: 10px;
+}
+
+.downloadCast img{
+    width: 50px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.downloadRating{
+    background-color: var(--color-primary);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-weight: 700;
+    padding: 10px;
+}
+
+.downloadContent{
+    background-color: var(--color-dark);
+}
+.downloadContent{
+    display: flex;
+    flex-direction: column;
+}
+.downloadLink{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    text-transform: capitalize;
+    font-size: 22px;
+}
+
+
+
+
+
+
+
+
+
+
+
  @media all and (min-width:768px) {
     .posts {
         flex-direction: row;
@@ -159,6 +227,20 @@
     .watch-content{
         padding: 30px;
         align-self: center;
+    }
+    .downloadImg{
+        height: auto;
+        background-color: #000;
+    }
+    .downloadContent{
+        flex-direction: row;
+    }
+    .downloadInfo{
+        flex-grow: 1;
+    }
+    .downloadLink,.downloadRating{
+        flex: 0 0 200px;    
+        justify-content: center;
     }
 
 }

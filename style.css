@@ -1,7 +1,6 @@
-
 /* ********* header css********** */
 
-.header{
+.header {
     background-color: var(--color-dark);
     color: var(--color-white);
     display: flex;
@@ -9,19 +8,21 @@
     height: 400px;
     justify-content: space-between;
 }
-.site-info{
+
+.site-info {
     flex-grow: 1;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
-.site-info h1{
+
+.site-info h1 {
     text-transform: uppercase;
 }
 
 .navbar li a:link,
-.navbar li a:visited{
+.navbar li a:visited {
     text-transform: capitalize;
     background-color: var(--color-primary);
     display: block;
@@ -33,13 +34,15 @@
     transition: all .4s ease-in-out;
 }
 
-.navbar ul{
+.navbar ul {
     display: flex;
     flex-direction: column;
 }
+
 .navbar ul li {
     flex-grow: 1;
 }
+
 .navbar ul li a:focus,
 .navbar ul li a:active,
 .navbar ul li a:hover {
@@ -49,70 +52,113 @@
 
 /* ############ content area css ################### */
 
-.content-area{
+.content-area {
     display: flex;
     flex-direction: column;
 }
 
 
 
-.main-content-area{
+.main-content-area {
     padding: 10px;
 }
 
-.post{
+.post {
     background-color: var(--color-white);
     margin-bottom: 20px;
 }
 
-.post img{
+.post img {
     width: 100%;
     height: 100%;
     object-fit: cover;
 }
-.post figure{
+
+.post figure {
     display: flex;
     flex-direction: column;
 }
-.post figcaption h2{
+
+.post figcaption h2 {
     background-color: var(--color-primary);
     text-align: center;
     color: var(--color-dark);
     text-transform: capitalize;
     padding: 20px;
 }
-.post figcaption p{
+
+.post figcaption p {
     color: var(--color-dark);
     padding: 25px;
     line-height: 1.5;
 }
-.posts{
+
+.posts {
     display: flex;
     flex-direction: column;
 }
 
 
+/* watch now section css */
 
+.watch-card {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--color-dark);
+    color: var(--color-white);
+    margin-bottom: 15px;
+}
+.watch-img img{
+    width: 100%;
+}
+.watch-content{
+    padding: 20px;
+}
+.watch-content h3{
+    text-transform: capitalize;
+    font-size: 32px;
+    margin-bottom: 15px;
+    font-weight: 400;
+}
+.watch-content p{
+    margin-bottom: 15px;
+}
+.watch-content p span{
+    margin-right: 10px;
+    font-size: 22px;
+}
 
-
-
-
-
-
-
-
-
-@media all and (min-width:768px){
-    .posts{
+ @media all and (min-width:768px) {
+    .posts {
         flex-direction: row;
         flex-wrap: wrap;
         justify-content: space-between;
     }
-    .one-half{
+
+    .one-half {
         width: 49%;
     }
-    .one-third{
+
+    .one-third {
         width: 32%;
+    }
+    .watch-card{
+        flex-direction: row;
+    }
+    .watch-img{
+        flex: 0 0 400px;
+    }
+    .watch-img img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    .reverse .watch-img{
+        order: 1;
+    }
+    .watch-content{
+        padding: 30px;
+        align-self: center;
     }
 
 }
@@ -120,33 +166,41 @@
 
 
 
-@media all and (min-width:1180px){
-    .navbar ul{
+@media all and (min-width:1180px) {
+    .navbar ul {
         flex-direction: row;
     }
-    .content-area{
+
+    .content-area {
         flex-direction: row;
     }
-    .main-content-area{
+
+    .main-content-area {
         flex-grow: 1;
         padding: 20px;
     }
-    .sidebar-section{
+
+    .sidebar-section {
         flex: 0 0 400px;
     }
 
-    .posts{
+    .posts {
         flex-direction: row;
         flex-wrap: wrap;
         justify-content: space-between;
     }
-    .post{
+
+    .post {
         width: 100%;
     }
-    .one-half{
+
+    .one-half {
         width: 49%;
     }
-    .one-third{
+
+    .one-third {
         width: 32%;
     }
+
+    
 }

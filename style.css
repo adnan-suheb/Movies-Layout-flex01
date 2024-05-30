@@ -186,11 +186,41 @@
     font-size: 22px;
 }
 
+/* gallery style */
+
+.galleryImg{
+    display: flex;
+    flex-wrap: wrap;
+}
+.gImg{
+    flex-grow: 1;
+    height: 350px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+}
+.gImg a{
+    display: block;
+    height: 100%;
+}
+.gImg img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+.galleryImg{
+    margin-left: -10px;
+}
 
 
 
-
-
+.footer{
+    background-color: var(--color-dark);
+    color: var(--color-white);
+    text-align: center;
+    padding: 20px;
+}
 
 
 
@@ -237,11 +267,21 @@
     }
     .downloadInfo{
         flex-grow: 1;
-    }
-    .downloadLink,.downloadRating{
-        flex: 0 0 200px;    
+    }    
+
+    .downloadLink, .downloadRating{
         justify-content: center;
     }
+
+    .gImg{
+        flex-basis: 48%;
+        flex-grow: 0;
+        justify-content: space-between;
+    }
+   
+    
+   
+
 
 }
 
@@ -284,5 +324,31 @@
         width: 32%;
     }
 
+    .downloadLink,.downloadRating{
+        flex: 0 0 200px;    
+        justify-content: center;
+    }
+     /* 1 5 9 */
+    /* 2 6 */
+    /* 3 7 */
+    /* 4 8 */
+
+   
+    .galleryImg :nth-child(4n+1){
+        flex-basis: 400px;
+    }
+    .galleryImg :nth-child(4n+2){
+        flex-basis: 320px;
+    }
+    .galleryImg :nth-child(4n+3){
+        flex-basis: 250px;
+    }
+    .galleryImg :nth-child(4n+4){
+        flex-basis: 200px;
+    }
+
+    .gImg{
+        flex-grow: 1;
+    }
     
 }
